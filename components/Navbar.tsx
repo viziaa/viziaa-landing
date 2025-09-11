@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 border-b bg-gradient-to-r from-slate-900/70 via-slate-800/60 to-slate-900/70 backdrop-blur-md supports-[backdrop-filter]:bg-slate-900/50">
+    <nav className="sticky top-0 z-50 border-b bg-gradient-to-r from-slate-900/70 via-slate-800/60 to-slate-900/70 backdrop-blur-md supports-[backdrop-filter]:bg-slate-900/50 py-2">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <img
@@ -19,25 +19,53 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-6 text-sm">
-          <a href="http://localhost:3000/auth/login">
-            <Button variant="outline">Login</Button>
+        <div className="hidden md:flex items-center gap-3">
+          <a href="#features">
+            <Button className="bg-transparent text-gray-200 text-md hover:bg-gray-600">
+              Fitur
+            </Button>
           </a>
 
-          <a href="http://localhost:3000/auth/login">
-            <Button>Get Started</Button>
+          <a href="#about">
+            <Button className="bg-transparent text-gray-200 text-md hover:bg-gray-600">
+              Tentang Viziaa
+            </Button>
+          </a>
+
+          <a
+            href={`${APP_URL}/auth/login`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline">Masuk</Button>
+          </a>
+
+          <a
+            href={`${APP_URL}/auth/register`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>Daftar</Button>
           </a>
         </div>
 
         {/* Mobile (simple) */}
         <div className="md:hidden flex items-center gap-3">
-          <a href="http://localhost:3000/auth/login">
+          <a
+            href={`${APP_URL}/auth/login`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="outline" size="sm">
               Login
             </Button>
           </a>
-          <a href="http://localhost:3000/auth/register">
-            <Button size="sm">Start</Button>
+          <a
+            href={`${APP_URL}/auth/register`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button size="sm">Daftar</Button>
           </a>
         </div>
       </div>

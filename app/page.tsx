@@ -41,16 +41,24 @@ export default function LandingPage() {
             </p>
 
             <div className="flex gap-4">
-              <a href={`${APP_URL}`}>
-                <Button size="lg">Get Started</Button>
+              <a
+                href={`${APP_URL}/auth/register`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg">Daftar Sekarang</Button>
               </a>
-              <a href={`${APP_URL}/auth/login`}>
+              <a
+                href={`${APP_URL}/auth/login`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button
                   size="lg"
                   variant="outline"
                   className="text-black hover:opacity-80"
                 >
-                  Login
+                  Masuk
                 </Button>
               </a>
             </div>
@@ -184,10 +192,10 @@ export default function LandingPage() {
               </li>
               <li>
                 <a href="#about" className="hover:text-white transition">
-                  Tentang
+                  Tentang Viziaa
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href={`${APP_URL}/auth/login`}
                   className="hover:text-white transition"
@@ -202,7 +210,7 @@ export default function LandingPage() {
                 >
                   Register
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
