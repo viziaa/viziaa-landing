@@ -1,3 +1,3 @@
-viziaa-ui repository: https://github.com/viziaa/viziaa-ui
+Frontend Repository: https://github.com/viziaa/viziaa-ui
 
-viziaa-api repository: https://github.com/viziaa/viziaa-api
+Backend Repository: https://github.com/viziaa/viziaa-api
